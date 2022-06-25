@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #e5e5e5;
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 90%;
+    background-color: #012169;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    width: 50%;
+    max-width: 400px;
+    margin-right: 0.5rem;
+}
+.title{
+    color: white;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+.desc{
+    color: white
+}
+.desc::first-letter{
+    font-size: 1.5rem;
+    padding-right: 0.5px;
+}
+.container{
+    width: 50%;
+    max-width: 400px;
+    margin-left: 0.5rem;
+}
+.price{
+    background-color: rgb(223, 6, 158);
+    color: white;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-bottom: 1rem; 
+}
+.thin-text{
+    font-weight: 250;
+}
+.form{
+    width: 100%;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input{
+    width: 90%;
+    padding: 8px 5px 8px;
+    margin: 10px auto 0;
+    font-size: 1rem;
+    outline: none;
+}
+
+
+.submit{
+    margin: 10px auto;
+    background-color: rgb(14, 236, 14);
+    color: white;
+    width: 90%;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid green
+    ;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: rgb(1, 84, 1);
+}
+.label-text{
+    display: block;
+    width: 90%;
+    text-align: center;
+    font-size: 0.5rem;
+    margin-left: calc(0.5rem + 5px);
+}
+.terms{
+    text-decoration: none;
+    color:rgb(223, 6, 158) ;
+}
+.redSpan{
+    display: block;
+    text-align: left;
+    color: red;
+    margin: 0 0 0 1.2rem ;
+    font-size: 0.75rem;
+    opacity: 0;
+}
+.greenSpan{
+    color: green;
+}
+
+@media screen and (max-width:730px) {
+    main{
+        position: relative;
+        top: 100%;
+        transform: translateY(-0%); 
+        width: 100%;
+        min-height: 100vh;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 0.5rem;
+    }
+    .text{
+        width:100%
+    }
+    .desc{
+        margin-bottom: 1rem;
+    }
+    .container{
+        width: 100%;
+    }
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
